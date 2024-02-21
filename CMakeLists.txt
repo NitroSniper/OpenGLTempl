@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.3)
-project(LearnOpenGL-CLion)
+project(OpenGLTempl)
 
 find_package(OpenGL REQUIRED)
 
@@ -7,10 +7,10 @@ find_package(OpenGL REQUIRED)
 add_subdirectory(lib/glfw)
 include_directories(lib/glfw/include)
 
-# Including GLAD
-include_directories(lib/glad/include)
+# Including GLAD and GLM
+include_directories(include)
 
-set(SOURCE_FILES src/main.cpp lib/glad/src/glad.c)
+set(SOURCE_FILES src/main.cpp src/glad.c)
 
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})

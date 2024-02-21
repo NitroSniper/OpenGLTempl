@@ -4,7 +4,7 @@ refresh:
 build:
 	make -C build
 run: build
-	./build/LearnOpenGL-CLion
+	./build/OpenGLTempl
 
 .PHONY: build run refresh
 
