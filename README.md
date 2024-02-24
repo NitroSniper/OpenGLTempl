@@ -5,7 +5,7 @@ Includes GLAD, GLM, and GLFW libraries. Has a simple main.cpp file with ["Hello 
 
 Works with Neovim, CLion and any other IDE with a CMake build system.
 
-If working in the terminal, There is a friendly Makefile that can be used
+If working in the terminal, There is a friendly Makefile that can be used to startup cmake if your IDE doesn't do that already.
 
 ```bash
 make
@@ -15,9 +15,24 @@ To set up build system
 ```bash
 make run
 ```
-to compile and run the project
+To compile and run the project
 
 
+To Choose what GLFW version you want:
+```bash
+cd lib/glfw
+git checkout 3.4 # I Choose version 3.4, look at the repository tags to find what version
+cd -       # Go back to the top directory
+git add lib/glfw
+git commit -m "changed glfw to 3.4 version"
+git push    # if you have a remote repository
+```
+
+If someone wants to get those changes
+```bash
+git pull
+git submodule update --init
+```
 
 
 Works on multiple platforms. Tested on:
