@@ -17,11 +17,11 @@ make run
 ```
 To compile and run the project
 
-
-To Choose what GLFW version you want:
+[GLFW Versions Here](https://github.com/glfw/glfw/releases)
+To Choose what GLFW version you want: 
 ```bash
 cd lib/glfw
-git checkout 3.4 # I Choose version 3.4, look at the repository tags to find what version
+git checkout 3.4 # I Chose version 3.4, look at the repository tags to find what version
 cd -       # Go back to the top directory
 git add lib/glfw
 git commit -m "changed glfw to 3.4 version"
